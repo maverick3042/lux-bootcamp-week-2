@@ -1,0 +1,44 @@
+**WEEK 2 LUX BOOTCAMP ASSIGNMENT**
+
+1.  Is a process where python automatically manages memory allocation and dealocation for objects and it is  handled be the interpreter  in the backend  
+    **It is important because:**  
+* It helps with memory management automation  
+* It reduces memory leaks  
+* Improves the developer efficacy  
+* Helps on memory safety
+
+  **How memory management is handled in python**
+
+  Memory management is handled in python through:
+
+* Dynamic allocation  which occurs as the program is running. This means that as the program operates, it can dynamically determine where to allocate memory while reusing and releasing it.  
+2.     **Python Lists** can store elements of different types (e.g., integers, floats, strings, etc.) in the same list while **NumPy Arrays**: Require all elements to be of the same data type, which allows for better performance in numerical computations. NumPy arrays are strictly homogeneous (i.e., all elements must be of the same type).  
+         **Advantages of NumPy Arrays in Numerical Computations**  
+* NumPy arrays support **vectorized operations**, meaning you can apply mathematical operations on entire arrays without using explicit loops. This is crucial for performance and makes your code cleaner and more concise.  
+* NumPy provides a **wide range of mathematical and statistical functions** out of the box, including functions for linear algebra (e.g., matrix multiplication, eigenvalues), Fourier transforms, random number generation, and more.  
+* NumPy arrays support **broadcasting**, which allows you to perform operations on arrays of different shapes in a way that automatically aligns them without explicit reshaping.  
+* NumPy provides powerful **slicing and indexing techniques** that allow you to manipulate arrays efficiently, such as extracting sub-arrays, reshaping arrays, and performing operations along specific dimensions.
+
+3.      List comprehension offers a concise way to create a new list based on         the values of an existing list.  
+numbers = [1, 2, 3, 4, 5] 
+squared = [x ** 2 for x in numbers] 
+print(squared)
+
+
+4.   A **shallow copy** creates a new object but does not create copies of the objects that the original object contains. Instead, it simply copies references (or pointers) to the nested objects. This means that if the original object contains nested objects (e.g., lists inside lists), changes to the nested objects in the copy will also affect the original object and vice versa while  A **deep copy** creates a new object and recursively creates copies of all objects that the original object contains. This includes all the nested objects, so the copied object is fully independent of the original. Modifying the deep copy will not affect the original object at all.
+
+5.  Elements in a list can be changed, added, or removed after creation.  
+      The syntax of a list is enclosed in square brackets  
+    **Example**  
+my_list = [1, 2, 3, "hello"]
+my_list[2] = 4
+my_list.append(5)
+print(my_list)  
+Elements in a tuple cannot be modified once created.  
+Tuple syntax is enclosed in parentheses  
+  my_tuple = (1, 2, 3, "hello")
+# my_tuple[2] = 4 
+print(my_tuple)  
+   
+      
+    
